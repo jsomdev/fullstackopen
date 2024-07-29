@@ -11,5 +11,5 @@ sequenceDiagram
 	deactivate server
 
     Note right of browser: The browser sends the input of the form to the server. In return, the server responds with the response, including the newly created note.
-    Note right of brower: The browser executes the callback function that renders the new note.
+    Note right of browser: The browser executes the callback function that renders the new note.
 ```
