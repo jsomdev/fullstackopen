@@ -7,11 +7,10 @@ sequenceDiagram
 	
 	browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
 	activate server
-	server->>server:  Push note to array of notes
 	server->>browser: URL Redirect (/notes)
 	deactivate server
 	
-	Note right of browser: The browser sends the form input to the server in the body of the post request.
+	Note right of browser: The browser sends the form input to the server in the body of the post request. The server then pushes the new note the array.
 	
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
